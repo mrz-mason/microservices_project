@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s  # Интервал опроса метрик
+
+scrape_configs:
+  - job_name: 'calc_service'
+    static_configs:
+      - targets: ['localhost:9102']  # Метрики из calc_service
+
+  - job_name: 'rpc_gateway'
+    static_configs:
+      - targets: ['localhost:9101']  # Метрики из RPC Gateway
+
+  - job_name: 'load_balancer'
+    static_configs:
+      - targets: ['localhost:9100']  # Метрики из Load Balancer

@@ -51,7 +51,7 @@ microservices_project/
 1. Клонируйте репозиторий:
    ```bash
    git clone <ссылка на ваш репозиторий>
-   cd my-backend-project
+   cd microservices_project
    ```
 
 2. Установите зависимости:
